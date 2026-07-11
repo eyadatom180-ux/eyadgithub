@@ -1,25 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Test</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #f5f5f5;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+
 <model-viewer
     src="gokart-fast-normal.glb"
-    ios-src="gokart.usdz"
-    alt="Cake"
-
     camera-controls
     auto-rotate
-    auto-rotate-delay="0"
-
-    reveal="auto"
-    loading="eager"
-
-    ar
-    ar-modes="scene-viewer quick-look webxr"
-
-    shadow-intensity="1"
-    environment-image="neutral"
-
-    style="width:100%;height:100vh;background:transparent;">
-
-    <button slot="ar-button" class="ar-button">
-        📱 View in AR
-    </button>
-
+    shadow-intensity="1">
 </model-viewer>
+
+</body>
+</html>
